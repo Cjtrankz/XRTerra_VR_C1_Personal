@@ -16,7 +16,12 @@ public class Slicer : MonoBehaviour
             
             foreach (Collider objectToBeSliced in objectsToBeSliced)
             {
+                //set the cross section material to the outside material
+                //Debug.Log(objectToBeSliced);
+                Material materialAfterSlice = objectToBeSliced.GetComponent<Renderer>().material;
+
                 SlicedHull slicedObject = SliceObject(objectToBeSliced.gameObject, materialAfterSlice);
+
 
                 GameObject upperHullGameobject = slicedObject.CreateUpperHull(objectToBeSliced.gameObject, materialAfterSlice);
                 GameObject lowerHullGameobject = slicedObject.CreateLowerHull(objectToBeSliced.gameObject, materialAfterSlice);
@@ -36,6 +41,9 @@ public class Slicer : MonoBehaviour
     {
         obj.AddComponent<MeshCollider>().convex = true;
         obj.AddComponent<Rigidbody>();
+
+        //make newly sliced objects still sliceable by adding them to the sliceable layer
+        obj.layer = LayerMask.NameToLayer("Sliceable");
     }
 
     private SlicedHull SliceObject(GameObject obj, Material crossSectionMaterial = null)
