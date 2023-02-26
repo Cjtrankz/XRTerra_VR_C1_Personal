@@ -688,7 +688,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 171642, guid: c00e85788ad86034880d5c8600b57600, type: 3}
       propertyPath: m_Name
-      value: syurikenn1-1
+      value: ShurikenContainer
       objectReference: {fileID: 0}
     - target: {fileID: 471642, guid: c00e85788ad86034880d5c8600b57600, type: 3}
       propertyPath: m_RootOrder

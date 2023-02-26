@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShurikenThrow : MonoBehaviour
 {
+
+    //lock x and y rotation upon throw
     // Start is called before the first frame update
     void Start()
     {

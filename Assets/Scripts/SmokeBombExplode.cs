@@ -9,7 +9,7 @@ public class SmokeBombExplode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<RigidBody>();
     }
 
     // Update is called once per frame
@@ -20,15 +20,16 @@ public class SmokeBombExplode : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.relativeVelocity.magnitude > 25)
+        //Debug.Log(collision.relativeVelocity.magnitude);
+        if(collision.relativeVelocity.magnitude > 6.2)
         {
             //turn off mesh renderer maybe
-            Debug.Log("explode");
+            //Debug.Log("explode");
             Instantiate(smoke, transform.position, Quaternion.identity);
         
             
             //delete object
-            Destroy(this, 5);
+            Destroy(this.gameObject, 5);
         }
     }
 }
