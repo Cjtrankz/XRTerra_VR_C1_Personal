@@ -328,19 +328,15 @@ LODGroup:
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.6
+  - screenRelativeHeight: 0.1880359
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4941364288502454433}
-  - screenRelativeHeight: 0.20000002
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 546621188719895023}
   - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 4649288897779238733}
-  m_Enabled: 0
+    - renderer: {fileID: 546621188719895023}
+  m_Enabled: 1
 --- !u!21 &21057200752956992
 Material:
   serializedVersion: 6
@@ -349,7 +345,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Optimized Bark Material
-  m_Shader: {fileID: 14000, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 0f4122b9a743b744abe2fb6a0a88868b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -388,7 +384,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Optimized Sprout Material 2.1
-  m_Shader: {fileID: 14000, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 0f4122b9a743b744abe2fb6a0a88868b, type: 3}
   m_ShaderKeywords: GEOM_TYPE_LEAF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -427,7 +423,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Optimized Sprout Material 2.0
-  m_Shader: {fileID: 14000, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 0f4122b9a743b744abe2fb6a0a88868b, type: 3}
   m_ShaderKeywords: GEOM_TYPE_LEAF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
