@@ -9,7 +9,7 @@ public class SmokeBombExplode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<RigidBody>();
+        //rb = GetComponent<RigidBody>();
     }
 
     // Update is called once per frame
