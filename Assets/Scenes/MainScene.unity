@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &22788818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3244553707286072786, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
+  m_PrefabInstance: {fileID: 1882159391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &22788821
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22788818}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.65475196
+  m_Height: 3.8452
+  m_Direction: 1
+  m_Center: {x: 0.06, y: 1.24, z: 0.4}
 --- !u!1 &24151982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,6 +1200,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slicer: {fileID: 306682814}
+--- !u!1 &814484079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2868960127485273011, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
+  m_PrefabInstance: {fileID: 1882159391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &814484084
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814484079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 43839059389596038, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
 --- !u!1001 &912430957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1775,6 +1813,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3146038, y: 0.20778966, z: 0.27440262}
   m_Center: {x: 0.06346989, y: 0.044159293, z: 0.05651951}
+--- !u!1 &1151382766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4455812864711409743, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
+  m_PrefabInstance: {fileID: 1882159391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1151382771
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151382766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 43215990493155270, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
 --- !u!1 &1162692518 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 171642, guid: c00e85788ad86034880d5c8600b57600, type: 3}
@@ -3082,6 +3139,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2842956978540125714, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.2608561
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842956978540125714, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3244553707286072786, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
       propertyPath: m_Name
       value: JapaneseMapleTree_C
@@ -3753,6 +3818,7 @@ GameObject:
   - component: {fileID: 543450652365998525}
   - component: {fileID: 3469287838295901720}
   - component: {fileID: 1711813854300025554}
+  - component: {fileID: 919132148375130888}
   m_Layer: 0
   m_Name: house
   m_TagString: Untagged
@@ -3760,6 +3826,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &919132148375130888
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148375130887}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7178614900331774897, guid: 5a50e48b56672d942ba674d336791bf6, type: 3}
 --- !u!1 &919132149505987329
 GameObject:
   m_ObjectHideFlags: 0
