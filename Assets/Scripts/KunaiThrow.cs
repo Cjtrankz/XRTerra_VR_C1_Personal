@@ -27,6 +27,6 @@ public class KunaiThrow : MonoBehaviour
     public void Throw(int num)
     {
         rb.AddForce(transform.forward*num, ForceMode.Impulse);
-        transform.localEulerAngles = new Vector3(0,0,90);
+        transform.localEulerAngles = new Vector3(90,0,90);
     }
 }

@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8248621240922993218}
   - component: {fileID: 8248621240913349976}
-  - component: {fileID: 1399793248867185085}
   - component: {fileID: 9072440886890970270}
   - component: {fileID: 3136766535438092130}
   - component: {fileID: 3710395559876336295}
   - component: {fileID: 124424236316617133}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shuriken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +46,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8248621240922758754}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 67705a53132227c4d9252cb1909d86fd, type: 3}
+  m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3c32fcedcc686da49a4518d6131a8d62, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -57,21 +56,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &1399793248867185085
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8248621240922758754}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 67705a53132227c4d9252cb1909d86fd, type: 3}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!65 &9072440886890970270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -156,6 +140,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8248621240913349976}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -173,7 +169,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8248621240913349976}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
+        m_MethodName: SetTrigger
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -283,7 +279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8248621240922993220}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mat2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,8 +293,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8248621240922758756}
-  m_LocalRotation: {x: -4.3297806e-17, y: 0.7071068, z: 0.7071068, w: -4.3297806e-17}
-  m_LocalPosition: {x: 0, y: 0, z: -0.003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8248621240922993218}
@@ -313,7 +309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8248621240922993222}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8248621240922993272}
   - component: {fileID: 8248621240909161368}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: obj1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

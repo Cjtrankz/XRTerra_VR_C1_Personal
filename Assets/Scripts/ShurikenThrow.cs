@@ -12,18 +12,25 @@ public class ShurikenThrow : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+
+    }
+
+    void FixedUpdate()
+    {
+        rb.AddForce(transform.forward*2500, ForceMode.Force);
     }
 
     void OnCollisionEnter(Collision collision)
     {
         rb.velocity = new Vector3(0,0,0);
         rb.isKinematic = true;
-        anim.enabled = false;
+        //anim.ResetTrigger("ShurikenSpin");
     }
 
     public void Throw(int num)
     {
-        rb.AddForce(transform.forward*num, ForceMode.Impulse);
-        this.transform.Rotate(90,0,0);
+        rb.AddForce(transform.forward*num, ForceMode.Force);
+        //this.transform.Rotate(90,0,0);
+        //anim.Play("ShurikenSpin");
     }
 }

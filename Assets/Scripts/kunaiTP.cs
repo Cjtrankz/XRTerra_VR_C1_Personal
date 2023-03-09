@@ -20,13 +20,13 @@ public class kunaiTP : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("clap");
+        //Debug.Log("clap");
         if(col.gameObject.tag == "hands")
         {
             kunai = GameObject.Find("Kunai(Clone)");
             if(kunai != null)
             {
-                body.transform.position = new Vector3(kunai.transform.position.x, 0, kunai.transform.position.z);
+                body.transform.position = new Vector3(kunai.transform.position.x, body.transform.position.y, kunai.transform.position.z);
                 Destroy(kunai, 2);
             }
         }
